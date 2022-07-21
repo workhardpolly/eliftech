@@ -10,7 +10,6 @@ const CheckOut = () => {
 
 
 
-
       </div>
    )
 }

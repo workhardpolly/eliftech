@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from 'react-dom';
 import { useState } from "react";
 
@@ -8,7 +8,29 @@ import './ShopsList.css';
 
 
 
-const ShopList = () => {
+const ShopList = (props) => {
+
+   // const [currentShop, setCurrentShop] = useState('mcd')
+
+   // let currentShop = "mcd";
+
+   // const setCurrentShop = (id) => { currentShop = id }
+
+   // useEffect(() => {
+   //    console.log("usedEf")
+   // }, [])
+
+
+
+
+   // console.log(currentShop)
+
+   // const setShop = () => {
+   //    setCurrentShop()
+   // }
+   let currentShop = props.currentShop;
+   console.log(currentShop)
+
 
 
 
@@ -16,11 +38,10 @@ const ShopList = () => {
       <div className="shopsList">
          <p>Shops:</p>
 
-         <ShopButtons shopId={1} shopName={'McDuck'} />
-         <ShopButtons shopId={2} shopName={'CFK'} />
-         <ShopButtons shopId={3} shopName={'BurgerKey'} />
-         <ShopButtons shopId={4} shopName={'CreepyChiken'} />
-
+         <ShopButtons shopId={'mcd'} >McDuck</ShopButtons>
+         <ShopButtons shopId={'cfk'} >CFK</ShopButtons>
+         <ShopButtons shopId={'bk'}>BugrerKnight</ShopButtons>
+         <ShopButtons shopId={'cc'}>CreepyCheeken</ShopButtons>
 
       </div>
 

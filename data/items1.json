@@ -1,106 +1,106 @@
 {
-  "mcd": {
-    "1": {
-      "id": "1",
+  "mcd": [
+    {
+      "id": 1,
       "productDesctiption": "Standart Burger",
       "productImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hamburger_%28black_bg%29.jpg/250px-Hamburger_%28black_bg%29.jpg",
       "productName": "Hamburger"
     },
-    "2": {
-      "id": "2",
+    {
+      "id": 2,
       "productDesctiption": "Standart Cheeseburger",
       "productImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hamburger_%28black_bg%29.jpg/250px-Hamburger_%28black_bg%29.jpg",
       "productName": "CheeseBurger"
     },
-    "3": {
-      "id": "3",
+    {
+      "id": 3,
       "productDesctiption": "Onion Burger",
       "productImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hamburger_%28black_bg%29.jpg/250px-Hamburger_%28black_bg%29.jpg",
       "productName": "OnionBurger"
     },
-    "4": {
-      "id": "4",
+    {
+      "id": 4,
       "productDesctiption": "Non Standart Burger",
       "productImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hamburger_%28black_bg%29.jpg/250px-Hamburger_%28black_bg%29.jpg",
       "productName": "NotAHamburger"
     }
-  },
-  "cfk": {
-    "5": {
-      "id": "5",
+  ],
+  "cfk": [
+    {
+      "id": 5,
       "productDesctiption": "Standart Burger",
       "productImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hamburger_%28black_bg%29.jpg/250px-Hamburger_%28black_bg%29.jpg",
       "productName": "Hamburger"
     },
-    "6": {
-      "id": "6",
+    {
+      "id": 6,
       "productDesctiption": "Standart Cheeseburger",
       "productImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hamburger_%28black_bg%29.jpg/250px-Hamburger_%28black_bg%29.jpg",
       "productName": "CheeseBurger"
     },
-    "7": {
-      "id": "7",
+    {
+      "id": 7,
       "productDesctiption": "Onion Burger",
       "productImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hamburger_%28black_bg%29.jpg/250px-Hamburger_%28black_bg%29.jpg",
       "productName": "OnionBurger"
     },
-    "8": {
-      "id": "8",
+    {
+      "id": 8,
       "productDesctiption": "Non Standart Burger",
       "productImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hamburger_%28black_bg%29.jpg/250px-Hamburger_%28black_bg%29.jpg",
       "productName": "NotAHamburger"
     }
-  },
-  "bk": {
-    "9": {
-      "id": "9",
+  ],
+  "bk": [
+    {
+      "id": 9,
       "productDesctiption": "Standart Burger",
       "productImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hamburger_%28black_bg%29.jpg/250px-Hamburger_%28black_bg%29.jpg",
       "productName": "Hamburger"
     },
-    "10": {
-      "id": "10",
+    {
+      "id": 10,
       "productDesctiption": "Standart Cheeseburger",
       "productImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hamburger_%28black_bg%29.jpg/250px-Hamburger_%28black_bg%29.jpg",
       "productName": "CheeseBurger"
     },
-    "11": {
-      "id": "11",
+    {
+      "id": 11,
       "productDesctiption": "Onion Burger",
       "productImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hamburger_%28black_bg%29.jpg/250px-Hamburger_%28black_bg%29.jpg",
       "productName": "OnionBurger"
     },
-    "12": {
-      "id": "12",
+    {
+      "id": 12,
       "productDesctiption": "Non Standart Burger",
       "productImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hamburger_%28black_bg%29.jpg/250px-Hamburger_%28black_bg%29.jpg",
       "productName": "NotAHamburger"
     }
-  },
-  "cc": {
-    "13": {
-      "id": "13",
+  ],
+  "cc": [
+    {
+      "id": 13,
       "productDesctiption": "Standart Burger",
       "productImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hamburger_%28black_bg%29.jpg/250px-Hamburger_%28black_bg%29.jpg",
       "productName": "Hamburger"
     },
-    "14": {
-      "id": "14",
+    {
+      "id": 14,
       "productDesctiption": "Standart Cheeseburger",
       "productImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hamburger_%28black_bg%29.jpg/250px-Hamburger_%28black_bg%29.jpg",
       "productName": "CheeseBurger"
     },
-    "15": {
-      "id": "15",
+    {
+      "id": 15,
       "productDesctiption": "Onion Burger",
       "productImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hamburger_%28black_bg%29.jpg/250px-Hamburger_%28black_bg%29.jpg",
       "productName": "OnionBurger"
     },
-    "16": {
-      "id": "16",
+    {
+      "id": 16,
       "productDesctiption": "Non Standart Burger",
       "productImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hamburger_%28black_bg%29.jpg/250px-Hamburger_%28black_bg%29.jpg",
       "productName": "NotAHamburger"
     }
-  }
+  ]
 }

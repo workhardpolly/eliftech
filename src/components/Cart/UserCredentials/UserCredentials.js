@@ -4,8 +4,6 @@ import React, { useState } from "react";
 import "./UserCredentials.css";
 
 
-const credentials1 = { 1: 1, 2: 2, 3: 3 }
-
 const UserCredentials = () => {
 
    const [name, setName] = useState('');
@@ -14,49 +12,71 @@ const UserCredentials = () => {
    const [adress, setAdress] = useState('');
 
 
-   const credentials = {
-      name,
-      email,
-      phone,
-      adress
-   };
-   console.log(credentials)
+   const handleSubmit = (e) => {
+      e.preventDefault();
+      const credentials = {
+         name,
+         email,
+         phone,
+         adress
+      };
+
+      fetch('http://localhost:4000/orders', {
+         method: 'POST',
+         headers: { "Content-Type": "application/json" },
+         body: JSON.stringify(credentials)
+      })
+
+   }
 
    return (
 
 
-      <div className="userCredentialsBlock">
+
+      <form onSubmit={handleSubmit} >
+         <div className="checkoutForm">
+            <div className="credentialsInputForm">
+               <p>Name:</p>
+
+               <input type="text"
+                  required
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}></input>
+
+               <p>Email:</p>
+               <input type="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+               ></input>
+               <p>Phone:</p>
+               <input type="tel"
+                  required
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}></input>
+               <p>Adress:</p>
+               <input type="text"
+                  required
+                  value={adress}
+                  onChange={(e) => setAdress(e.target.value)}></input>
+
+            </div>
+            <div className="summary">
+               { }
+            </div>
+            <div className="submit">
+               <div>{ }</div>
+               <button type="submit" className="saveOrder">Save</button>
+            </div>
+         </div >
 
 
-         <p>Name:</p>
-
-         <input type="text"
-            required
-            value={name}
-            onChange={(e) => setName(e.target.value)}></input>
-
-         <p>Email:</p>
-         <input type="email"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-         ></input>
-         <p>Phone:</p>
-         <input type="tel"
-            required
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}></input>
-         <p>Adress:</p>
-         <input type="text"
-            required
-            value={adress}
-            onChange={(e) => setAdress(e.target.value)}></input>
-         <button type="submit" className="saveCred">Save</button>
 
 
+      </form>
 
-      </div >
+
    )
 }
 
-export { UserCredentials, credentials1 }
+export default UserCredentials

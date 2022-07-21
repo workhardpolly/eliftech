@@ -1,36 +1,55 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+import Template from "./Item/Template";
+import ShopList from "../ShopsList/ShopsList";
+
 import './ShopMenu.css'
-import data from './Item/items.json'
+// import data from './Item/items.json'
 
 
 
-const ShopMenu = () => {
+const ShopMenu = (props) => {
+
+   // const [base, setBase] = useState('mcd');
+   const base = ('mcd')
+   console.log(props.currentShop)
+
+   const [recievedData, setItemsArray] = useState('');
 
 
 
-   const items = Object.keys(data.mcd);
+   useEffect(() => {
+      fetch('http://localhost:5000/' + base)
+         .then(res => {
+            return res.json();
+         })
+         .then((data) => {
+
+            setItemsArray(Object.values(data));
+
+         });
+   }, []);
 
 
+   // console.log(recievedData);
 
-   const template = items.map((item) => {
-
-      return (
-         <div className="item" key={data.mcd[item].id}>
-            <img src={data.mcd[item].productImage}></img>
-            <h3>{data.mcd[item].productName}</h3>
-            <p>{data.mcd[item].productDesctiption}</p>
-            <button className={data.mcd[item].id}>ADD TO CART</button>
-
-         </div>)
-   });
+   let status = recievedData.length > 0
 
 
    return (
       <div className="list">
-         {template}
+         {status ? <Template s={status} d={recievedData} /> : console.log('not OK')}
+
       </div>
    )
 }
 
 export default ShopMenu
+
+
+
+
+
+
+

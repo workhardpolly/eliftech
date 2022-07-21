@@ -17,7 +17,7 @@ const ShopButtons = (props) => {
 
    return (
 
-      <button onClick={chooseShop}>{props.shopName}</button>
+      <button onClick={chooseShop}></button>
 
    )
 }
