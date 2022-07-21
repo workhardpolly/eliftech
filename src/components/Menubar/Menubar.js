@@ -1,13 +1,14 @@
 import React from 'react'
 import { ReactDOM } from 'react'
+import { Link } from 'react-router-dom'
 import './Menubar.css'
 
 const Menu = () => {
    return (
       <div className='menubar'>
-         <a href='/shop'>Shop</a>
+         <Link to='/'>Shop</Link>
          <span> | </span>
-         <a href='/cart'>Shopping Cart</a>
+         <Link to='/cart'>Shopping Cart</Link>
       </div>
    )
 }
