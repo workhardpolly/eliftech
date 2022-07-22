@@ -1,3 +1,7 @@
+# go to eliftech folder
+
+cd ./eliftech/
+
 # run npm start from terminal
 
 npm run
